@@ -1,12 +1,14 @@
-#include <sys/types.h>
-#include <dirent.h>
-#include <errno.h>
-#include <vector>
-#include <string>
-#include <iostream>
-#include <fstream>
-#include <stdlib.h>
-#include <stdio.h>
+//#include <sys/types.h>
+//#include <dirent.h>
+//#include <errno.h>
+//#include <vector>
+//#include <string>
+//#include <iostream>
+//#include <fstream>
+//#include <stdlib.h>
+//#include <stdio.h>
+
+#include "HashMap.h"
 
 using namespace std;
 
@@ -32,17 +34,23 @@ int main(int argc, char* argv[]){
         cout << "Must specify 2 arguments: directory path and n (for all permutations of n-word sequences)" << endl;
         exit(EXIT_FAILURE);
     }
+cout << "argv[1] = " << argv[1] << endl;
+
+    cout << "argv[2] = " << argv[2] << endl;
+
 
     string dir = string(argv[1]);
     vector<string> files = vector<string>();
 
     getdir(dir, files);
 
-
+cout << "for(int i = 0; i < files.size(); i++):" <<  endl;
     for(int i = 0; i < files.size(); i++){
 
+cout << "std::ifstream n_wordFile (files[" << i << "]);" << endl;
         std::ifstream n_wordFile (files[i]);
-
-        
+cout << "cout << files[" << i << "] << endl;" << endl;
+        //cout << n_wordFile << endl;
+        cout << files[i] << endl;
     }
 }

@@ -26,7 +26,7 @@ int getdir (string dir, vector<string> &files)
 
 int main()
 {
-    string dir = string("sm_doc_set");
+    string dir = string("/home/jeronimo/Desktop/BME_Fall_2018/EE312/Cheaters!/sm_doc_set");
     vector<string> files = vector<string>();
 
     getdir(dir,files);

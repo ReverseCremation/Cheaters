@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Cheaters_.dir/dir_help.cpp.o CMakeFiles/Cheaters_.dir/HashMap.cpp.o CMakeFiles/Cheaters_.dir/plagiarismCatcher.cpp.o  -o Cheaters_ 
